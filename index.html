@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Red+Hat+Display"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-color: hsl(225, 100%, 94%);
+        background-size: 100% 47%;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        font-family: "Red Hat Display";
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -5em;
+        height: 100vh;
+      }
+
+      .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 20%;
+        background-color: white;
+        border-radius: 15px 15px 10px 10px;
+        box-shadow: 0px 10px 10px hsl(224, 23%, 55%);
+        z-index: 1;
+        gap: 1em;
+      }
+
+      .image img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .card__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.8em;
+      }
+
+      .card__info .summary {
+        font-size: 1.4rem;
+        color: hsl(223, 47%, 23%);
+        font-weight: 900;
+      }
+
+      .card__info .card__paragraph {
+        font-size: 0.8rem;
+        text-align: center;
+        width: 75%;
+        color: hsl(224, 23%, 55%);
+        font-weight: 500;
+      }
+
+      .card__info .plan {
+        display: flex;
+        width: 75%;
+        align-items: center;
+        padding:10px 15px;
+        border-radius: 0.4em;
+        background-color:hsl(225, 100%, 98%)
+      }
+
+      .image2 img{
+        width: 2.25em;
+        height: 2.25em;
+        object-fit: cover;
+        margin-top: 0.3em;
+      }
+      .card__info .annual__plan{
+        margin-left: 0.4em;
+      }
+
+      .card__info .annual__plan .title{
+        color: hsl(223, 47%, 23%);
+        font-weight: 900;
+        font-size: 0.8rem;
+      }
+
+      .card__info .annual__plan .price{
+        color: hsl(224, 23%, 55%);
+        font-weight: 600;
+        font-size: 0.7rem;
+      }
+
+      .card__info .card__change{
+        margin-left: auto;
+        font-size:0.65rem;
+      }
+
+      .card__info .card__change a{
+        color:hsl(245, 75%, 52%);
+        font-weight: 900;
+      }
+
+      .payment{
+        background-color:hsl(245, 75%, 52%);
+        padding: 1em 9em;
+        border-radius: 0.625em;
+        color:white;
+        box-shadow: 3px 5px 10px hsl(224, 23%, 55%);
+        font-size: 0.6rem;
+        font-weight: 700;
+      }
+
+      .cancel{
+        font-size: 0.75rem;
+        margin-bottom: 2em;
+        font-weight: 600;
+        margin-top:1em;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="card">
+        <div class="image">
+          <img src="./images/illustration-hero.svg" alt="Card Image" />
+        </div>
+
+        <div class="card__info">
+          <div class="summary">Order Summary</div>
+
+          <div class="card__paragraph">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </div>
+
+          <div class="plan">
+            <div class="image2">
+              <img src="./images/icon-music.svg" alt="Music Icon" />
+            </div>
+
+            <div class="annual__plan">
+              <div class = "annual__plan title">Annual Plan</div>
+              <div class = "annual__plan price">$59.99/year</div>
+            </div>
+
+            <div class="card__change">
+              <a href="">Change</a>
+            </div>
+          </div>
+
+          <div class="payment">Proceed to Payment</div>
+
+          <div class="cancel">Cancel Order</div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Huy Vo</a>.
+    </footer>
+  </body>
+</html>
